@@ -21,8 +21,8 @@ LOCAL_SRC_FILES := dumpstate.cpp
 
 LOCAL_MODULE := libdumpstate.hammerhead
 
+LOCAL_VENDOR_MODULE := true
 LOCAL_MODULE_TAGS := optional
 
-LOCAL_PROPRIETARY_MODULE := true
 
 include $(BUILD_STATIC_LIBRARY)
