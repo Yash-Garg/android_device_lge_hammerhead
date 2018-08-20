@@ -23,6 +23,9 @@ TARGET_CPU_VARIANT := krait
 # Binder API version
 TARGET_USES_64_BIT_BINDER := true
 
+# Filesystem
+TARGET_FS_CONFIG_GEN := $(PLATFORM_PATH)/config.fs
+
 # Camera
 TARGET_NEEDS_LEGACY_CAMERA_HAL1_DYN_NATIVE_HANDLE := true
 
