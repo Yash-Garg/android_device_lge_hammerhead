@@ -95,6 +95,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/lge/hammerhead/sec_config:system/etc/sec_config
 
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hidl.manager@1.0
+    
 # NFC access control + feature files + configuration
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
