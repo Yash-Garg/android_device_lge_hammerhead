@@ -193,7 +193,7 @@ PRODUCT_PACKAGES += \
     camera.hammerhead \
     mm-jpeg-interface-test \
     mm-qcamera-app \
-    Snap
+    Camera2
 
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
