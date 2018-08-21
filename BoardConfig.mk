@@ -24,7 +24,7 @@ TARGET_CPU_VARIANT := krait
 TARGET_USES_64_BIT_BINDER := true
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := $(PLATFORM_PATH)/config.fs
+TARGET_FS_CONFIG_GEN := $(PLATFORM_PATH)/configs/config.fs
 
 # Camera
 TARGET_NEEDS_LEGACY_CAMERA_HAL1_DYN_NATIVE_HANDLE := true
@@ -101,7 +101,7 @@ BOARD_USES_SECURE_SERVICES := true
 TARGET_NO_RADIOIMAGE := true
 TARGET_BOARD_PLATFORM := msm8974
 TARGET_BOOTLOADER_BOARD_NAME := hammerhead
-TARGET_BOARD_INFO_FILE := device/lge/hammerhead/board-info.txt
+TARGET_BOARD_INFO_FILE := device/lge/hammerhead/configs/board-info.txt
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
 BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
 TARGET_NO_RPC := true
@@ -145,8 +145,8 @@ BOARD_HAL_STATIC_LIBRARIES := libdumpstate.hammerhead
 
 # BOARD_SEPOLICY_DIRS += device/lge/hammerhead/sepolicy
 
-DEVICE_MANIFEST_FILE := device/lge/hammerhead/manifest.xml
-DEVICE_MATRIX_FILE := device/lge/hammerhead/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := device/lge/hammerhead/manifests/manifest.xml
+DEVICE_MATRIX_FILE := device/lge/hammerhead/manifests/compatibility_matrix.xml
 
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
