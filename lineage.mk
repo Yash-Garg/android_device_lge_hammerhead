@@ -15,6 +15,6 @@ DEVICE_PACKAGE_OVERLAYS += device/lge/hammerhead/overlay/cm
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := hammerhead
 PRODUCT_NAME := lineage_hammerhead
-PRODUCT_BRAND := google
+PRODUCT_BRAND := Google
 PRODUCT_MODEL := Nexus 5
 PRODUCT_MANUFACTURER := LGE
