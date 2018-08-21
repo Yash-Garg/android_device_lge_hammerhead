@@ -91,6 +91,9 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
     frameworks/native/data/etc/android.software.midi.xml:system/etc/permissions/android.software.midi.xml
 
+# Get the long list of APNs
+PRODUCT_COPY_FILES := device/lge/hammerhead/configs/apns-full-conf.xml:system/etc/apns-conf.xml
+
 # For GPS
 PRODUCT_COPY_FILES += \
     device/lge/hammerhead/gps/sec_config:system/etc/sec_config
