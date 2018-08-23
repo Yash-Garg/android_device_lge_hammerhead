@@ -24,7 +24,7 @@ TARGET_CPU_VARIANT := krait
 TARGET_USES_64_BIT_BINDER := true
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := $(PLATFORM_PATH)/configs/config.fs
+TARGET_FS_CONFIG_GEN := device/lge/hammerhead/configs/config.fs
 
 # Camera
 TARGET_NEEDS_LEGACY_CAMERA_HAL1_DYN_NATIVE_HANDLE := true
