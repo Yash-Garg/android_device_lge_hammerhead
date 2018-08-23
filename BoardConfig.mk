@@ -38,21 +38,7 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=hammerhea
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02900000 --tags_offset 0x02700000
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
-ifeq ($(ARM_EABI_TOOLCHAIN),)
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
-KERNEL_TOOLCHAIN := $(subst linux-androideabi,eabi,$(ANDROID_TOOLCHAIN))
-ifeq ($(wildcard $(KERNEL_TOOLCHAIN)),)
-KERNEL_TOOLCHAIN := $(subst $(TARGET_GCC_VERSION),4.8,$(KERNEL_TOOLCHAIN))
-endif
-ifeq ($(wildcard $(KERNEL_TOOLCHAIN)),)
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-none-eabi-
-KERNEL_TOOLCHAIN :=
-else
-ARM_EABI_TOOLCHAIN := $(KERNEL_TOOLCHAIN)
-endif
-endif
-
-ARM_CROSS_COMPILE ?= $(KERNEL_CROSS_COMPILE)
 
 # Shader cache config options
 # Maximum size of the  GLES Shaders that can be cached for reuse.
@@ -137,7 +123,7 @@ TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
-TARGET_RECOVERY_FSTAB = device/lge/hammerhead/fstab.hammerhead
+TARGET_RECOVERY_FSTAB = device/lge/hammerhead/rootdir/fstab.hammerhead
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/lge/hammerhead
 
