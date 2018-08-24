@@ -98,6 +98,10 @@ PRODUCT_COPY_FILES := device/lge/hammerhead/configs/apns-full-conf.xml:system/et
 PRODUCT_COPY_FILES += \
     device/lge/hammerhead/gps/sec_config:system/etc/sec_config
 
+# Required for AEX
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.extended.display.version=6.0
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
