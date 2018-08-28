@@ -143,6 +143,15 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl \
     libbt-vendor
 
+# For off charging mode
+PRODUCT_PACKAGES += \
+    charger_res_images
+
+PRODUCT_PACKAGES += \
+    Terminal \
+    WallpaperPicker \
+    Launcher3
+
 # Live Wallpapers
 PRODUCT_PACKAGES += \
     LiveWallpapersPicker \

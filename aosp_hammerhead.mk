@@ -14,15 +14,6 @@
 # limitations under the License.
 #
 
-# For off charging mode
-PRODUCT_PACKAGES += \
-    charger_res_images
-
-PRODUCT_PACKAGES += \
-    Terminal \
-    WallpaperPicker \
-    Launcher3
-
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
