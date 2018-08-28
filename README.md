@@ -9,7 +9,7 @@ CPU     | Quad-core 2.3 GHz Krait 400
 Chipset | Qualcomm MSM8974 Snapdragon 800
 GPU     | Adreno 330
 Memory  | 2 GB RAM
-Shipped Android Version | Android 4.0 (Ice Cream Sandwich), upgradable to 6.0 (Marshmallow)
+Shipped Android Version | Android 4.4 (Kitkat), Upgradable to 6.0.1 (Marshmallow)
 Storage | 16 GB
 MicroSD | Up to 32 GB
 Battery | Non-removable Li-Po 2300 mAh battery
