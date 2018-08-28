@@ -28,11 +28,11 @@ LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
 LOCAL_ADDITIONAL_DEPENDENCIES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
 
 LOCAL_SRC_FILES := mm_jpeg_ionbuf.c
-LOCAL_SRC_FILES += mm_jpeg_test.c 
+LOCAL_SRC_FILES += mm_jpeg_test.c
 
 LOCAL_MODULE           := mm-jpeg-interface-test
 LOCAL_SHARED_LIBRARIES := liblog libcutils libdl libmmjpeg_interface
-
+LOCAL_PROPRIETARY_MODULE := true
 include $(BUILD_EXECUTABLE)
 
 LOCAL_PATH := $(OLD_LOCAL_PATH)
