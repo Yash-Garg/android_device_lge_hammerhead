@@ -158,3 +158,6 @@ include vendor/lge/hammerhead/BoardConfigVendor.mk
 
 # TWRP
 TW_THEME := portrait_hdpi
+
+# Use Snapdragon LLVM, if available
+TARGET_USE_SDCLANG=true
