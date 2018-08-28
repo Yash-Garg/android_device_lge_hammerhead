@@ -154,6 +154,10 @@ TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS:= true
 TARGET_NEEDS_PLATFORM_TEXTRELS := \
     $(TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS)
 
+
+# Shipping API level (for CTS backward compatibility)
+PRODUCT_SHIPPING_API_LEVEL := 19
+
 include vendor/lge/hammerhead/BoardConfigVendor.mk
 
 # TWRP
