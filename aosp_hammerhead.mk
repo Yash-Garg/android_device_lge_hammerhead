@@ -13,12 +13,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-$(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
 
-PRODUCT_NAME := aosp_hammerhead
-PRODUCT_MODEL := Nexus 5
-
-# for off charging mode
+# For off charging mode
 PRODUCT_PACKAGES += \
     charger_res_images
 
@@ -27,3 +23,28 @@ PRODUCT_PACKAGES += \
     WallpaperPicker \
     Launcher3
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
+TARGET_BOOTANIMATION_HALF_RES := true
+
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+# Inherit device configuration
+$(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
+
+# CM-specific overlays
+DEVICE_PACKAGE_OVERLAYS += device/lge/hammerhead/overlay/cm
+
+# Build Flags
+TARGET_UNOFFICIAL_BUILD_ID := N5
+KBUILD_BUILD_USER := YashGarg
+KBUILD_BUILD_HOST := RaspberryPI
+
+## Device identifier. This must come after all inclusions
+PRODUCT_DEVICE := hammerhead
+PRODUCT_NAME := aosp_hammerhead
+PRODUCT_BRAND := Google
+PRODUCT_MODEL := Nexus 5
+PRODUCT_MANUFACTURER := LGE
