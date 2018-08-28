@@ -154,7 +154,7 @@ TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS:= true
 TARGET_NEEDS_PLATFORM_TEXTRELS := \
     $(TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS)
 
--include vendor/lge/hammerhead/BoardConfigVendor.mk
+include vendor/lge/hammerhead/BoardConfigVendor.mk
 
 # TWRP
 TW_THEME := portrait_hdpi
