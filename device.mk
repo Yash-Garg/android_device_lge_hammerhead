@@ -244,10 +244,10 @@ PRODUCT_PACKAGES += \
 
 # NFC packages
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.0-impl$(if $(LINEAGE_BUILD),-bcm) \
-    android.hardware.nfc@1.0-service \
+    android.hardware.nfc@1.1-service \
     nfc_nci.bcm2079x.default \
     NfcNci \
+    SecureElement \
     Tag
 
 # Vibrator HAL
