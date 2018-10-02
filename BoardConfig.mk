@@ -167,5 +167,5 @@ TW_THEME := portrait_hdpi
 TARGET_USE_SDCLANG=true
 
 # Kernel Toolchain
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/aarch64/aarch64-opt-linux-android/bin
+KERNEL_TOOLCHAIN := $(shell pwd)/prebuilts/gcc/linux-x86/aarch64/aarch64-opt-linux-android/bin
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-opt-linux-android-
